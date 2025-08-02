@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr;
+  height: 100vh;
+  width: 100vw;
+}
+
+.bg {
+  background-image: url("/images/bg.jpg");
+  background-size: cover;
+}
+
+.sign-up-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.sign-up-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  margin: 36px;
+}
+
+.sign-up-text {
+  width: 960px;
+  font-size: 24px;
+  font-weight: 500;
+  padding-bottom: 24px;
+}
+
+.sign-up-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.sign-up-form-wrapper{
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+
+
+.sign-up-form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.sign-up-form-group > input {
+  width: 480px;
+  height: 30px;
+}
